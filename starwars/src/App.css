@@ -10,6 +10,8 @@
 }
 
 .character{
+  font-family: 'Noto Sans', sans-serif;
+  font-weight: 600;
   box-sizing: border-box;
   margin: 1em 0;
   padding: 1em;
@@ -17,6 +19,10 @@
   border: solid 1px black;
   background-color: beige;
   width: 20em;
+}
+
+.character span{
+  font-weight: 500;
 }
 .header {
   margin-top: 2em;
