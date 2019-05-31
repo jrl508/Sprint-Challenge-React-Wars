@@ -1,5 +1,6 @@
 import React, { Component } from 'react';
 import './App.css';
+import CharList from './components/CharList';
 
 class App extends Component {
   constructor() {
@@ -30,9 +31,13 @@ class App extends Component {
   };
 
   render() {
+    const { starwarsChars } = this.state;
+
     return (
       <div className="App">
-        <h1 className="Header">React Wars</h1>
+        <img src="https://fontmeme.com/permalink/190531/8fc4ce87bbb475dff2db8b8d23caa350.png" alt="star-wars-font" border="0" className="header"/>
+
+        <CharList starwarsChars={starwarsChars}/>
       </div>
     );
   }
